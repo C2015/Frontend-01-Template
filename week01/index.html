@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.foo,
+.bar,
+.bar::after,
+.baz {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+}
+.foo {
+  z-index: 1;
+  mix-blend-mode: luminosity;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-filter: contrast(1.25);
+  filter: contrast(1.25);
+}
+.foo:hover {
+  opacity: 1;
+}
+.bar,
+.bar::after,
+.baz {
+  background: url(https://upload.wikimedia.org/wikipedia/en/7/7d/Lenna_%28test_image%29.png);
+}
+.bar::after {
+  content: '';
+  -webkit-filter: blur(4px) invert(1) contrast(0.75);
+  filter: blur(4px) invert(1) contrast(0.75);
+  mix-blend-mode: overlay;
+}
+    </style>
+</head>
+<body>
+    <div class="foo">
+        <div class="bar"></div>
+      </div>
+      <div class="baz"></div>
+</body>
+</html>
