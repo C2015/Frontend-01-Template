@@ -82,3 +82,12 @@ A:
 Q： 图片怎么压缩不模糊
 
 A： 图片压缩 50%， 在给文字使用锐化。
+
+
+
+
+#学号：G20200447010775
+#姓名：张松
+#班级：5班
+#小组：8组
+#作业&总结链接：[https://github.com/C2015/Frontend-01-Template/tree/master/week01](https://github.com/C2015/Frontend-01-Template/tree/master/week01)
